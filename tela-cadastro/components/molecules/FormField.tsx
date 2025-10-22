@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import InputField from "../atoms/textInput";
-import Typography from "../atoms/typography";
+import {InputField} from "../atoms/textInput";
+import Label from "../atoms/label";
 
 interface FormFieldProps {
     label: string;
@@ -26,7 +26,7 @@ export const FormField: React.FC<FormFieldProps> = ({
 }) => {
     return (
         <div>
-            <Typography variant="label">{label}</Typography>
+            <Label htmlFor={id}>{label}</Label>
             <InputField
                 type={type}
                 placeholder={placeholder}
