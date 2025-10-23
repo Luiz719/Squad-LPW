@@ -1,7 +1,8 @@
+'use client';
 import React from "react";
 
-interface InputFieldProps {
-    type?: string;
+export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    type: string;
     placeholder?: string;
     value: string;
     id: string;
