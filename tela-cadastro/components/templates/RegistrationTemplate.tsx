@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { UserForm } from '../organisms/userForm';
+import { UserForm } from '../organisms/UserForm';
 
 export const RegistrationTemplate: React.FC = () => {
   return (

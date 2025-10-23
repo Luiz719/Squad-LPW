@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FormField } from "../molecules/formField";
+import { FormField } from "../molecules/FormField";
 import { Checkbox } from "../atoms/checkbox";
 import { Button } from "../atoms/button";
 import { Loader } from "../atoms/loader";
