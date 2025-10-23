@@ -1,10 +1,11 @@
+'use cliente';
 import React from "react";
 
-interface CheckboxProps {
+export interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
     id: string;
     name: string;
     checked: boolean;
-    onChange: () => void;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Checkbox: React.FC<CheckboxProps> = ({
