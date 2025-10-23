@@ -1,7 +1,7 @@
 import React from 'react';
 
 const variantStyles = {
-  "primary": 'bg-bank-primary text-white hover:bg-bank-primary-dark',
+  "primary": 'bg-blue-600 text-white hover:bg-blue-700',
   "secondary": 'bg-white text-gray-700 border border-gray-300',
   "tertiary": 'bg-transparent text-bank-primary hover:text-bank-primary-dark',
 };
