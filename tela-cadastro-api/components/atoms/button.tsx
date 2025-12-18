@@ -4,6 +4,7 @@ const variantStyles = {
   "primary": 'bg-blue-600 text-white hover:bg-blue-700',
   "secondary": 'bg-white text-gray-700 border border-gray-300',
   "tertiary": 'bg-transparent text-bank-primary hover:text-bank-primary-dark',
+  "selection": " w-full border border-gray-300 rounded-lg p-6 flex flex-col items-center gap-3 text-center hover:border-blue-500 hover:shadow-md transition"
 };
 
 const sizeStyles = {

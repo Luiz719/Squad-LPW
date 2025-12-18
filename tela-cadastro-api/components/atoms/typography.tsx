@@ -21,11 +21,11 @@ const variantMapping: Record<TypographyVariant, React.ElementType> = {
 
 
 const variantClasses: Record<TypographyVariant, string> = {
-  h1: 'font-bold text-4xl text-bank-primary', 
-  h2: 'font-semibold text-2xl text-bank-secondary', 
+  h1: 'text-3xl font-bold text-center mb-6 text-gray-800', 
+  h2: 'text-lg font-semibold text-gray-800', 
   h3: 'font-semibold text-xl text-bank-text', 
   label: 'font-medium text-sm text-gray-700', 
-  body: 'font-normal text-base text-gray-800', 
+  body: 'text-sm text-gray-600', 
   caption: 'font-light text-xs text-gray-500', 
 };
 

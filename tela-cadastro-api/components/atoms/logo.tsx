@@ -14,7 +14,7 @@ export const Logo: React.FC<LogoProps> = ({
   ...props
 }) => {
 
-  const src =  "../public/ufba-seeklogo.png";
+  const src =  "/ufba-seeklogo.png";
   const classes = [baseStyles, className];
   const finalClassName = classes.filter(Boolean).join(' ');
 
