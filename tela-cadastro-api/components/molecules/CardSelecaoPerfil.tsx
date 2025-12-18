@@ -1,5 +1,7 @@
 'use client';
 import React from 'react';
+import { Typography } from '../atoms/typography';
+import Button from '../atoms/button';
 
 interface CardSelecaoPerfilProps {
   title: string;
@@ -15,21 +17,9 @@ export const CardSelecaoPerfil: React.FC<CardSelecaoPerfilProps> = ({
   onClick,
 }) => {
   return (
-    <button
+    <Button
       onClick={onClick}
-      className="
-        w-full
-        border border-gray-300
-        rounded-lg
-        p-6
-        flex flex-col
-        items-center
-        gap-3
-        text-center
-        hover:border-blue-500
-        hover:shadow-md
-        transition
-      "
+      variant="selection"
     >
       {icon && (
         <div className="text-4xl text-blue-600">
@@ -37,13 +27,13 @@ export const CardSelecaoPerfil: React.FC<CardSelecaoPerfilProps> = ({
         </div>
       )}
 
-      <h2 className="text-lg font-semibold text-gray-800">
+      <Typography variant="h2" className="text-lg font-semibold text-gray-800">
         {title}
-      </h2>
+      </Typography>
 
-      <p className="text-sm text-gray-600">
+      <Typography variant="body" className="text-sm text-gray-600">
         {description}
-      </p>
-    </button>
+      </Typography>
+    </Button>
   );
 };

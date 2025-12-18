@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { Typography } from '../atoms/typography';
 
 interface AuthLayoutProps {
   title?: string;
@@ -15,9 +16,9 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({ title, children }) => {
         <section className="w-full max-w-md">
           
           {title && (
-            <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+            <Typography variant="h1" className="text-3xl font-bold text-center mb-6 text-gray-800">
               {title}
-            </h1>
+            </Typography>
           )}
 
           {children}
