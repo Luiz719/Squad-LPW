@@ -1,8 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { AuthLayout } from '@/components/templates/AuthLayout';
-import { CardSelecaoPerfil } from '@/components/molecules/CardSelecaoPerfil';
+import { AuthLayout } from '../../../components/templates/AuthLayout';
+import { CardSelecaoPerfil } from '../../../components/molecules/CardSelecaoPerfil';
 import { User, Briefcase } from 'lucide-react';
 
 export default function PaginaSelecaoCadastro() {
