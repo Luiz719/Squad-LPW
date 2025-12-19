@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { DashboardLayout } from '../../../../components/templates/DashboardLayout';
-import { FormField } from '../../../../components/molecules/FormField';
-import { Button } from '../../../../components/atoms/button';
+import { DashboardLayout } from '../../../../../components/templates/DashboardLayout';
+import { FormField } from '../../../../../components/molecules/FormField';
+import { Button } from '../../../../../components/atoms/button';
 
 export default function NewMachinePage() {
   const router = useRouter();
@@ -29,7 +29,7 @@ export default function NewMachinePage() {
     });
 
     setLoading(false);
-    router.push('/cadastro'); 
+    router.push('/dashboard/maquinas'); 
   };
 
   return (

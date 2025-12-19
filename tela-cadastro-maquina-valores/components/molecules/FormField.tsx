@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {InputField} from "../atoms/textInput";
+import { InputField } from "../atoms/textInput";
 import Label from "../atoms/label";
 
 interface FormFieldProps {
@@ -12,6 +12,7 @@ interface FormFieldProps {
     name: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error?: string;
+    step?: string; 
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
@@ -23,6 +24,7 @@ export const FormField: React.FC<FormFieldProps> = ({
     name,
     onChange,
     error,
+    step, 
 }) => {
     return (
         <div>
@@ -35,6 +37,8 @@ export const FormField: React.FC<FormFieldProps> = ({
                 name={name}
                 onChange={onChange}
                 error={error}
+                step={step} 
             />
-        </div>);
+        </div>
+    );
 }

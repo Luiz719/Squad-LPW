@@ -9,6 +9,7 @@ export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElem
     name: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error?: string;
+    step?: string;
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
@@ -19,10 +20,12 @@ export const InputField: React.FC<InputFieldProps> = ({
     name,
     onChange,
     error,
+    step
 }) => {
     return(
         <div className="flex flex-col w-full">
             <input
+                step={step}
                 type={type}
                 placeholder={placeholder}
                 value={value}
